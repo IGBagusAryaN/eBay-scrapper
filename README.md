@@ -13,7 +13,7 @@ The API also uses AI to generate a short summary from the scraped product data.
 ## Installation
 1. Clone this repository:
    ```bash
-   git clone https://github.com/username/ebay-scraper.git
+   https://github.com/IGBagusAryaN/eBay-scrapper.git
    cd ebay-scraper
    ```
 2. Install dependencies:
