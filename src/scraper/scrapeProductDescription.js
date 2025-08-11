@@ -14,7 +14,6 @@ export default async function scrapeProductDescription(link) {
 
     let descriptionText = "";
 
-    // Klik tab "Description" kalau ada
     try {
       const descTabSelector = 'li[role="tab"] a[aria-controls*="desc_tab"]';
       if (await page.$(descTabSelector)) {
@@ -23,7 +22,6 @@ export default async function scrapeProductDescription(link) {
       }
     } catch {}
 
-    // Coba ambil dari iframe
     try {
       await page.waitForSelector('iframe[src*="ebaydesc"]', { timeout: 8000 });
       const iframeHandle = await page.$('iframe[src*="ebaydesc"]');
@@ -36,7 +34,6 @@ export default async function scrapeProductDescription(link) {
       }
     } catch {}
 
-    // Fallback: ambil langsung dari container seller description
     if (!descriptionText) {
       const possibleSelectors = [
         'div[data-testid="x-item-description"]',
