@@ -14,7 +14,8 @@ export default async function scrapeEbayPage(query, pageNum) {
   });
 
   const $ = cheerio.load(data);
-  const items = $(".s-item").toArray().slice(0, 10);
+  // const items = $(".s-item").toArray().slice(0, 10); //limit 10 results
+  const items = $(".s-item").toArray();
 
   const results = [];
 

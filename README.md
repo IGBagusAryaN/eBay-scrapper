@@ -5,9 +5,8 @@ The API also uses AI to generate a short summary from the scraped product data.
 
 ## Features
 - Search eBay products based on a query (`?q=`).
-- Retrieve **title**, **price**, **link**, and **description**.
+- Retrieve **title**, **price**, **link**, **description** and **summary**.
 - Generate product summaries using AI.
-- Limit the number of products returned (default: 5).
 
 
 ## Installation
