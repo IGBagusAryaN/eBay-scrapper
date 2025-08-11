@@ -38,7 +38,7 @@ The API also uses AI to generate a short summary from the scraped product data.
    - `q` → Search keyword (required)
  
 
-[![Demo Video]](public/video-test.mp4)
+[![Demo Video]](https://www.youtube.com/watch?v=pj74e0vKthg)
 
 
 ## Example Response
@@ -53,3 +53,4 @@ The API also uses AI to generate a short summary from the scraped product data.
   }
 ]
 ```
+# eBay-scrapper
